@@ -11,7 +11,7 @@ function getComputerChoice(){
 
     else{
         console.log("scissors")
-        return " scissors"
+        return "scissors"
     }
 }
 
@@ -30,6 +30,46 @@ function getHumanChoice() {
     }
 }
 
+function playRound(humanChoice, computerChoice) {
+    if(humanChoice == "paper" && computerChoice == "rock"){
+        console.log("You win! Paper Beats Rock")
+    }
 
-//getComputerChoice();
-getHumanChoice();
+    else if(humanChoice == "rock" && computerChoice == "scissors"){
+        console.log("You win! Rock Beats Scissors")
+    }
+
+    else if(humanChoice == "scissors" && computerChoice == "paper"){
+        console.log("You win! Scissors Beats Paper")
+    }
+
+    else if(humanChoice == "scissors" && computerChoice == "rock"){
+        console.log("You lose! Scissors does not beat Rock")
+    }
+
+    else if(humanChoice == "rock" && computerChoice == "paper"){
+        console.log("You lose! Rock does not beat Paper")
+    }
+
+    else if(humanChoice == "paper" && computerChoice == "scissors"){
+        console.log("You lose! Paper does not beat Scissors")
+    }
+
+    else if(humanChoice == "paper" && computerChoice == "paper"){
+        console.log("Its a tie")
+    }
+
+    else if(humanChoice == "rock" && computerChoice == "rock"){
+        console.log("Its a tie")
+    }
+
+    else if(humanChoice == "scissors" && computerChoice == "scissors"){
+        console.log("Its a tie")
+    }
+
+  }
+  
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+  
+  playRound(humanSelection, computerSelection);
