@@ -5,6 +5,12 @@ Play against the computer and see who reaches 5 points first!
 
 ---
 
+## 🌐 Play Online  
+You can access and play the game here:  
+👉 [https://artheek18.github.io/rock-paper-scissors/](https://artheek18.github.io/rock-paper-scissors/)  
+
+---
+
 ## ✅ Features
 - Player vs. Computer gameplay
 - First to reach 5 points wins
@@ -14,7 +20,7 @@ Play against the computer and see who reaches 5 points first!
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 1. Clone or download this repository
 2. Open `index.html` in your browser
 3. Click Rock, Paper, or Scissors to play!
